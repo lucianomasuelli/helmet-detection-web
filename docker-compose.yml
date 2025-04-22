@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  backend:
+    container_name: helmet-backend
+    build: ./helmet-detection-backend
+    ports:
+      - "8000:8000"
+    networks:
+      - helmet-network
+    environment:
+      - ENV=development
+      - CORS_ORIGINS=http://frontend:3000
+
+  frontend:
+    container_name: helmet-frontend
+    build:
+      context: ./helmets-ui
+      target: production
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - helmet-network
+    environment:
+      - BACKEND_URL=http://172.17.0.1:8000
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+networks:
+  helmet-network:
+    driver: bridge
