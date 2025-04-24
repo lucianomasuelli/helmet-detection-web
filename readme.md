@@ -1,4 +1,4 @@
-# 🫨 Helmets Detection Web
+# Helmets Detection Web
 
 **Helmets Detection Web** es una aplicación web desarrollada para la detección automática de motociclistas sin casco en videos, utilizando visión por computadora mediante modelos de aprendizaje profundo. El sistema está compuesto por un backend basado en FastAPI que ejecuta un modelo YOLOv8, y un frontend desarrollado en Next.js. Ambos componentes están orquestados a través de Docker y Docker Compose.
 
