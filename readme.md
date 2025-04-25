@@ -1,6 +1,29 @@
 # Helmets Detection Web
 
-**Helmets Detection Web** es una aplicación web desarrollada para la detección automática de motociclistas sin casco en videos, utilizando visión por computadora mediante modelos de aprendizaje profundo. El sistema está compuesto por un backend basado en FastAPI que ejecuta un modelo YOLOv8, y un frontend desarrollado en Next.js. Ambos componentes están orquestados a través de Docker y Docker Compose.
+**Helmets Detection Web** es una aplicación web desarrollada en el marco de un proyecto de beca Tipo C de la Facultad de Ingeniería de la Universidad Nacional de Cuyo, en el contexto de la Licenciatura en Ciencias de la Computación. El proyecto se titula:
+
+> Visualización de la información proveniente de la detección automática de infracciones de tránsito asociadas a la falta del casco obligatorio en motos y bicicleta.
+
+Este sistema permite la detección automática de motociclistas sin casco en videos, aplicando visión por computadora con modelos de aprendizaje profundo.
+
+El desarrollo se estructura en dos componentes principales:
+- Un backend basado en FastAPI, encargado de ejecutar un modelo YOLOv8 para la detección.
+- Un frontend implementado con Next.js, que permite la interacción del usuario con el sistema.
+
+Ambos servicios están orquestados a través de Docker y Docker Compose.
+
+## 👥 Integrantes del proyecto
+
+- Francisco Devaux – **Líder de Proyecto**
+  - Correo de contacto: frandevaux2013@gmail.com
+    
+- Luciano José Masuelli Redmond – **Integrante**
+  - Correo de contacto: lucianomasuelli.lm@gmail.com
+    
+- Dra. Ana Carolina Olivera – **Asesora**
+  - Investigadora Independiente CONICET
+  - Profesora Titular Efectiva con dedicación Semiexclusiva de la Licenciatura en Ciencias de la Computación, Facultad de Ingeniería, UNCuyo
+  - Correo de contacto: acolivera@conicet.gov.ar
 
 ## 📁 Estructura del proyecto
 
